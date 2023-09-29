@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <div class="card">
+        <video src="./video-1-Rain.mp4" autoplay muted loop id="weather-video"></video>
+        <video src="./video-2-Clouds.mp4" autoplay muted loop id="weather-video-2"></video>
+        <video src="./video-3-Haze.mp4" autoplay muted loop id="weather-video-3"></video>
+        <video src="./video-4-clear.mp4" autoplay muted loop id="weather-video-4"></video>
+        <video src="./video-5-snow.mp4" autoplay muted loop id="weather-video-5"></video>
+        <video src="./video-6-drizzle.mp4" autoplay muted loop id="weather-video-6"></video>
+        <video src="./video-7-mist.mp4" autoplay muted loop id="weather-video-7"></video>
+        <div class="search">
+            <input type="text", placeholder="Enter City Name", spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="weather">
+            <img class="weather-icon">
+            <h1 class="temp"></h1>
+            <p class="weather-name"></p>
+            <h2 class="city"></h2>
+
+            <div class="feel">
+                <p id="feellike">Feels Like</p>
+                <h2 class="feeltemp"></h2>
+            </div>
+
+            <div class="min-max">
+                <div class="max">
+                    <h2 class="temp-max"></h2>
+                    <p id="maximum">Max Temperature</p>
+                </div>
+                
+                <div class="min">
+                    <h2 class="temp-min"></h2>
+                    <p id="minimum">Min Temperature</p>
+                </div>
+
+            </div>
+
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.png" alt="">
+                    <div>
+                        <p class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="wind.png" alt="">
+                    <div>
+                        <p class="wind"></p>
+                        <p>wind Seed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+</body>
+</html>

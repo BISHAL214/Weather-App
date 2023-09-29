@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg-1.jpg);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 470px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    color: #fffdfd;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+}
+
+
+.search button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+}
+
+.search button:hover {
+    background: linear-gradient(150deg, #9595c1, #f3e80f, #b24ab3);
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+    position: relative;
+}
+
+.weather .min-max {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+.weather .min-max h2 {
+    font-size: 27px;
+    text-decoration: none;
+}
+
+.weather .feel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.feeltemp {
+    font-size: 5;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.weather .feel #feellike {
+    font-size: 1.5rem;
+}
+
+#weather-video {
+    display: none;
+    object-fit: cover; 
+    position: absolute;
+    height:100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#weather-video-2 {
+    display: none;
+    object-fit: cover; 
+    position: absolute;
+    height:100%;
+    width: 300%;
+    left: 0;
+    top: 0;
+}
+
+#weather-video-3 {
+    display: none;
+    object-fit: cover; 
+    position: absolute;
+    height:100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.weather-name {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+#weather-video-4 {
+    display: none;
+    object-fit: cover; 
+    position: absolute;
+    height:100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+#weather-video-5 {
+    display: none;
+    object-fit: cover; 
+    position: absolute;
+    height:100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#weather-video-6 {
+    display: none;
+    object-fit: cover; 
+    position: absolute;
+    height:100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#weather-video-7 {
+    display: none;
+    object-fit: cover; 
+    position: absolute;
+    height:100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
